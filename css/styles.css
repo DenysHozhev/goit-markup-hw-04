@@ -1,0 +1,412 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+/* сбрасываем margin */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Делаем изображения блочными элементами */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Задаем параметры контейнера   */
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/*Position*/
+
+/*Header position*/
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.list-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.list-address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.effective-container {
+  display: block;
+  align-items: center;
+}
+
+.section-advantages {
+  padding: 120px 0 120px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-advantages {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.item-advantages {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.team-container {
+}
+
+.list-team {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.team-name {
+  padding: 32px 0px;
+}
+
+.section-portfolio {
+  padding: 120px 0 120px 0;
+}
+
+.portfolio-container {
+  align-items: center;
+}
+
+.list-portfolio {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-name {
+  padding: 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.footer-container {
+  display: block;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* приклеиваем футер к низу страницы */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Fonts style*/
+
+.page-header {
+}
+
+.link-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #4d5ae5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-studio {
+  color: #2e2f42;
+}
+
+.link-logo:hover {
+  color: #404bbf;
+}
+
+.link-nav {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2e2f42;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+}
+
+.link-nav:hover {
+  color: #404bbf;
+}
+
+.link-nav:focus {
+  color: #404bbf;
+}
+
+.list {
+  list-style: none;
+}
+
+.title-address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.link-address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434455;
+  font-style: normal;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+}
+
+.link-address:hover {
+  color: #404bbf;
+}
+
+.link-address:active {
+  color: #404bbf;
+}
+
+.link-address:focus {
+  color: #404bbf;
+}
+
+.section-effective {
+  background-color: #2e2f42;
+  padding: 188px 0 188px;
+}
+
+.title-effective {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto;
+}
+
+.button-order {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: left;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.button-order:hover {
+  background-color: #404bbf;
+}
+
+.button-order:focus {
+  background-color: #404bbf;
+}
+
+.title-advantages {
+}
+
+.subtitle-advantages {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.text-advantages {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434455;
+}
+
+.section-team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+
+  margin-bottom: 72px;
+}
+
+.title-team {
+}
+
+.item-team {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% -72px) 4);
+}
+
+.subtitle-team {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: #ffffff;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.text-team {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: #ffffff;
+  color: #434455;
+}
+
+.item-portfolio {
+  width: calc((100% - 48px) / 3);
+}
+
+.subtitle-portfolio {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.text-portfolio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434455;
+}
+
+.section-footer {
+  background-color: #2e2f42;
+  padding: 100px 0 100px;
+}
+
+.text-footer {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+.logo-studio-footer {
+  color: #f4f4fd;
+}
