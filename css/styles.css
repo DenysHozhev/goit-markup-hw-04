@@ -334,6 +334,7 @@ main {
   width: calc((100% -72px) 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  max-width: 264px;
 }
 
 .team-name {
@@ -362,7 +363,51 @@ main {
 }
 
 /* оформление иконок соц сетей */
-.list-social {
+
+.svg-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 16px;
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.svg-item {
+  /* width: 40px;
+  height: 40px; */
+  /* position: relative; */
+}
+
+.svg-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 12px;
+  border: 1px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.svg-img {
+  width: 18px;
+  height: 18px;
+
+  /* position: ;
+  top: auto;
+  left: auto; */
+  /* padding: 12px; */
+  /* justify-content: center;
+  align-content: center; */
+}
+
+/* .social-list {
   display: flex;
 }
 
@@ -377,7 +422,7 @@ main {
 }
 
 .svg-instagram {
-  padding: 12px;
+  padding: 10px;
   background-color: #4d5ae5;
   border-radius: 50%;
   width: 40px;
@@ -412,7 +457,7 @@ main {
   width: 40px;
   height: 40px;
   fill: #f4f4fd;
-}
+} */
 
 /* Section portfolio */
 
