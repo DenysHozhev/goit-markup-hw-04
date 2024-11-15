@@ -376,9 +376,6 @@ main {
 }
 
 .svg-item {
-  /* width: 40px;
-  height: 40px; */
-  /* position: relative; */
 }
 
 .svg-link {
@@ -389,75 +386,18 @@ main {
   border-radius: 50%;
   padding: 12px;
   border: 1px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  display: flex;
+  align-items: center;
+}
+
+.svg-link:hover {
+  background-color: #404bbf;
 }
 
 .svg-img {
   width: 18px;
   height: 18px;
-
-  /* position: ;
-  top: auto;
-  left: auto; */
-  /* padding: 12px; */
-  /* justify-content: center;
-  align-content: center; */
 }
-
-/* .social-list {
-  display: flex;
-}
-
-.social-svg {
-  display: flex;
-  gap: 24px;
-  cursor: pointer;
-  padding: 0 16px;
-  margin-bottom: 32px;
-  margin-top: 8px;
-  justify-content: center;
-}
-
-.svg-instagram {
-  padding: 10px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  fill: #f4f4fd;
-}
-
-.svg-twitter {
-  padding: 12px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  color: #f4f4fd;
-  text-align: center;
-  fill: #f4f4fd;
-}
-
-.svg-facebook {
-  padding: 12px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  fill: #f4f4fd;
-}
-
-.svg-linkedin {
-  padding: 12px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  fill: #f4f4fd;
-} */
 
 /* Section portfolio */
 
@@ -480,7 +420,6 @@ main {
 .item-portfolio {
   width: calc((100% - 48px) / 3);
   cursor: pointer;
-  /* position: relative; */
   overflow: hidden;
 
   /* Прописываем управляющие свойства */
@@ -556,8 +495,11 @@ main {
   background-color: #2e2f42;
   padding: 100px 0 100px;
 }
-
 .footer-container {
+  display: flex;
+}
+
+.footer-style {
   display: block;
   align-items: flex-start;
   flex-direction: column;
@@ -581,6 +523,50 @@ main {
   text-align: left;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-links {
+  display: block;
+  margin-left: 120px;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* links footer position */
+.svg-footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.svg-footer-item {
+}
+
+.svg-footer-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.svg-footer-link:hover {
+  background-color: #31d0aa;
+}
+
+.svg-footer-img {
+  width: 24px;
+  height: 24px;
 }
 
 /* приклеиваем футер к низу страницы */
