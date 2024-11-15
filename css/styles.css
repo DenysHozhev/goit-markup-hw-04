@@ -59,6 +59,8 @@ main {
 .header-container {
   display: flex;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link-logo {
@@ -68,7 +70,7 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #4d5ae5;
+  color: #404bbf;
   text-decoration: none;
   text-transform: uppercase;
   /* Прописываем управляющие свойства */
@@ -188,7 +190,8 @@ main {
   padding: 188px 0 188px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto auto;
+  background-size: cover;
+  max-width: 1440px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -226,9 +229,7 @@ main {
   margin: auto;
   margin-top: 48px;
   /* Прописываем управляющие свойства */
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order:hover {
