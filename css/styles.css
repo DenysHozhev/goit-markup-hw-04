@@ -393,18 +393,20 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
+  width: 40px;
+  height: 40px;
   /* margin-top: 16px;
   padding: 0 16px;
   margin-bottom: 32px; */
 }
 
-.svg-item-container {
+/* .svg-item-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-}
+} */
 
 .svg-item {
 }
@@ -433,8 +435,8 @@ main {
 }
 
 .svg-img {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   fill: #f4f4fd;
 }
 
