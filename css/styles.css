@@ -184,7 +184,7 @@ main {
   margin-left: auto;
 }
 
-/* Section effective */
+/* Section 1 effective */
 
 .effective-container {
   display: block;
@@ -247,7 +247,7 @@ main {
   background-color: #404bbf;
 }
 
-/* Section advantages */
+/* Section 2 advantages */
 
 .section-advantages {
   padding: 120px 0 120px;
@@ -273,12 +273,12 @@ main {
 }
 
 .svg-adv {
-  background-color: #f4f4fd;
+  /* background-color: #f4f4fd;
   padding: 24px 100px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
-  height: 112px;
+  height: 112px; */
 }
 
 .subtitle-advantages {
@@ -288,7 +288,7 @@ main {
   letter-spacing: 0.02em;
   text-align: left;
   color: #2e2f42;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .list-advantages {
@@ -299,6 +299,18 @@ main {
 
 .item-advantages {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.svg-adv-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 264px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
 }
 
 .text-advantages {
