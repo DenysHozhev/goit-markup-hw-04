@@ -474,6 +474,13 @@ main {
 .img-wrap {
   position: relative;
   overflow: hidden;
+}
+
+.img-wrap:focus {
+  transform: translateY(0%);
+}
+
+.img-wrap:hover {
   transform: translateY(0%);
 }
 
