@@ -385,9 +385,7 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  width: 40px;
-  height: 40px;
-  max-width: 264px;
+
   margin: 8px auto 0;
 }
 
@@ -434,7 +432,6 @@ main {
 
 .list-portfolio {
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
@@ -449,6 +446,7 @@ main {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
 }
 
 .item-portfolio:focus {
@@ -459,6 +457,12 @@ main {
 .item-portfolio:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+
+.item-portfolio:hover .overlay-content {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .img-wrap {
@@ -479,16 +483,6 @@ main {
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-}
-
-.img-wrap:hover {
-  transform: translateY(0%);
-}
-
-.img-wrap:hover .overlay-content {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .portfolio-name {
